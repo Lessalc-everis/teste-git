@@ -18,25 +18,12 @@ public class Funcionario {
 		this.salario = salario;
 	}
 
-	public String getNome() {
-		return nome;
-	}
 
-	public LocalDate getDataAdmissao() {
-		return dataAdmissao;
-	}
-
-	public BigDecimal getSalario() {
-		return salario.setScale(2, RoundingMode.HALF_UP);
-	}
 	
 	public void reajustaSalario(BigDecimal reajuste) {
 		this.salario = this.salario.add(reajuste);
 	}
 
-	public void setSalario(BigDecimal salario) {
-		this.salario = salario;
-	}
 	
 
 }
